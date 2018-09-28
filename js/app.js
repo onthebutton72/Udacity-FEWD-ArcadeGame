@@ -8,8 +8,8 @@ var gridEdgeRight = 405;
 var gridEdgeBottom = 0;
 
 //Move Player variables
-var moveLateral = 101;
-var moveVertical = 86;
+var tileWidth = 101;
+var tileHeight = 83;
 
 // Enemy lane coordinates
 var topRow = 62;
@@ -83,16 +83,16 @@ Player.prototype.render = function() {
 // handler()
 Player.prototype.handleInput = function(key) {
     if (key == 'left' && this.x > gridEdgeLeft) {
-        this.x -= moveLateral;
+        this.x -= tileWidth;
     }
     else if (key == 'right' && this.x < gridEdgeRight) {
-        this.x += moveLateral;
+        this.x += tileWidth;
     }
     else if (key == 'up' && this.y > gridEdgeBottom) {
-        this.y -= moveVertical;
+        this.y -= tileHeight;
     }
     else if (key == 'down' && this.y < gridEdgeRight) {
-        this.y += moveVertical;
+        this.y += tileHeight;
     }
     if (this.y < gridEdgeBottom)  {
         player.waterReset();
