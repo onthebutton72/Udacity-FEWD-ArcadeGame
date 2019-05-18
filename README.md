@@ -11,7 +11,7 @@
 This is an Arcade Game.  Move the player through the traffic and avoid the bugs to reach the water to win!
 
 ## Running
-### View the Live Demo [here](http://arcadegame.16mb.com/)<br>
+
 Setup is simple, to start playing open index.html in your browser to launch the game.  Use the arrow keys to move the player across the board.  To close the game close out of the browser.
 
 ## Features
